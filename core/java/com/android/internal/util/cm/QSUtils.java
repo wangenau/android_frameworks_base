@@ -17,6 +17,7 @@ import android.os.UserHandle;
 import android.provider.Settings;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
+import java.io.File;
 
 import com.android.internal.telephony.PhoneConstants;
 
@@ -95,5 +96,9 @@ public class QSUtils {
             SensorManager sm = (SensorManager) context.getSystemService(Context.SENSOR_SERVICE);
             return (sm.getDefaultSensor(Sensor.TYPE_ACCELEROMETER) != null
                     && sm.getDefaultSensor(Sensor.TYPE_MAGNETIC_FIELD) != null);
+        }
+
+        public static boolean hasKernelFeature(String path) {
+            return new File(path).exists();
         }
 }

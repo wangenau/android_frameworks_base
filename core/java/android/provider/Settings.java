@@ -3690,6 +3690,12 @@ public final class Settings {
         public static final String T9_SEARCH_INPUT_LOCALE = "t9_search_input_locale";
 
         /**
+         * Whether F-Charge is enabled, only when the kernel support it
+         * @hide
+         */
+        public static final String FCHARGE_ENABLED = "fcharge_enabled";
+
+        /**
          * The style of the incoming call screen.
          * Default is {@link INCOMING_CALL_STYLE_FULLSCREEN_PHOTO}.
          * @hide

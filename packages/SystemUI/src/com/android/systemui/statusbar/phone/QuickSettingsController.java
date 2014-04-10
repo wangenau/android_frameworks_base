@@ -49,6 +49,7 @@ import static com.android.internal.util.cm.QSConstants.TILE_VOLUME;
 import static com.android.internal.util.cm.QSConstants.TILE_WIFI;
 import static com.android.internal.util.cm.QSConstants.TILE_WIFIAP;
 import static com.android.internal.util.cm.QSConstants.TILE_WIMAX;
+import static com.android.internal.util.cm.QSConstants.TILE_FASTCHARGE;
 
 import android.content.BroadcastReceiver;
 import android.content.ContentResolver;
@@ -109,6 +110,7 @@ import com.android.systemui.quicksettings.VolumeTile;
 import com.android.systemui.quicksettings.RemoteDisplayTile;
 import com.android.systemui.quicksettings.WiFiTile;
 import com.android.systemui.quicksettings.WifiAPTile;
+import com.android.systemui.quicksettings.FastChargeTile;
 import com.android.systemui.statusbar.phone.QuickSettingsContainerView.QSSize;
 import com.android.systemui.statusbar.policy.NetworkController;
 
@@ -301,6 +303,8 @@ public class QuickSettingsController {
                 qs = new HeadsUpTile(mContext, this);
             } else if (tile.equals(TILE_THEMES)) {
                 qs = new ThemesTile(mContext, this);
+            } else if (tile.equals(TILE_FASTCHARGE)) {
+                qs = new FastChargeTile(mContext, this);
             }
 
             if (qs != null) {
