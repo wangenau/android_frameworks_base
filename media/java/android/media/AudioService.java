@@ -217,7 +217,7 @@ public class AudioService extends IAudioService.Stub {
         5,  // STREAM_VOICE_CALL
         10,  // STREAM_SYSTEM
         10,  // STREAM_RING
-        20, // STREAM_MUSIC
+        30, // STREAM_MUSIC
         10,  // STREAM_ALARM
         10,  // STREAM_NOTIFICATION
         20, // STREAM_BLUETOOTH_SCO
