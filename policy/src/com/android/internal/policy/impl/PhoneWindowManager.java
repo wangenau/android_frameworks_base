@@ -22,7 +22,7 @@ import android.app.ActivityManagerNative;
 import android.app.IUiModeManager;
 import android.app.KeyguardManager;
 import android.app.AppOpsManager;
-import android.app.ProgressDialog;
+import android.app.AlertDialog;
 import android.app.SearchManager;
 import android.app.StatusBarManager;
 import android.app.UiModeManager;
@@ -5689,7 +5689,7 @@ public class PhoneWindowManager implements WindowManagerPolicy {
         }
     }
 
-    ProgressDialog mBootMsgDialog = null;
+    AlertDialog mBootMsgDialog = null;
 
     /** {@inheritDoc} */
     public void showBootMessage(final CharSequence msg, final boolean always) {
@@ -5697,7 +5697,7 @@ public class PhoneWindowManager implements WindowManagerPolicy {
         mHandler.post(new Runnable() {
             @Override public void run() {
                 if (mBootMsgDialog == null) {
-                    mBootMsgDialog = new ProgressDialog(mContext) {
+                    mBootMsgDialog = new AlertDialog(mContext) {
                         // This dialog will consume all events coming in to
                         // it, to avoid it trying to do things too early in boot.
                         @Override public boolean dispatchKeyEvent(KeyEvent event) {
@@ -5721,8 +5721,6 @@ public class PhoneWindowManager implements WindowManagerPolicy {
                         }
                     };
                     mBootMsgDialog.setTitle(R.string.android_upgrading_title);
-                    mBootMsgDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
-                    mBootMsgDialog.setIndeterminate(true);
                     mBootMsgDialog.getWindow().setType(
                             WindowManager.LayoutParams.TYPE_BOOT_PROGRESS);
                     mBootMsgDialog.getWindow().addFlags(
@@ -5733,6 +5731,7 @@ public class PhoneWindowManager implements WindowManagerPolicy {
                     lp.screenOrientation = ActivityInfo.SCREEN_ORIENTATION_NOSENSOR;
                     mBootMsgDialog.getWindow().setAttributes(lp);
                     mBootMsgDialog.setCancelable(false);
+                    mBootMsgDialog.setMessage("");
                     mBootMsgDialog.show();
                 }
                 mBootMsgDialog.setMessage(msg);
