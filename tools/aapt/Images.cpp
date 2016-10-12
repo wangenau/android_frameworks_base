@@ -773,6 +773,7 @@ static void dump_image(int w, int h, png_bytepp rows, int color_type)
         bpp = 4;
     } else {
         printf("Unknown color type %d.\n", color_type);
+        return;
     }
 
     for (j = 0; j < h; j++) {
