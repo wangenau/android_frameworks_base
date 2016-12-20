@@ -231,7 +231,7 @@ void android_os_Process_setProcessGroup(JNIEnv* env, jobject clazz, int pid, jin
         t_pri = getpriority(PRIO_PROCESS, t_pid);
 
         if (t_pri <= ANDROID_PRIORITY_AUDIO) {
-            int scheduler = sched_getscheduler(t_pid);
+            int scheduler = sched_getscheduler(t_pid) & ~SCHED_RESET_ON_FORK;
             if ((scheduler == SCHED_FIFO) || (scheduler == SCHED_RR)) {
                 // This task wants to stay in it's current audio group so it can keep it's budget
                 continue;
