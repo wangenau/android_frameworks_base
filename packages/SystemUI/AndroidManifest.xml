@@ -95,7 +95,7 @@
         android:allowBackup="false"
         android:hardwareAccelerated="true"
         android:label="@string/app_label"
-        android:icon="@*android:drawable/ic_launcher_android"
+        android:icon="@*android:drawable/platlogo"
         android:process="com.android.systemui"
         android:supportsRtl="true">
 
