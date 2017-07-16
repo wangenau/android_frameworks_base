@@ -1355,7 +1355,7 @@ public class KeyguardViewMediator {
                 // (like recents). Temporary enable/disable (e.g. the "back" button) are
                 // done in KeyguardHostView.
                 flags |= StatusBarManager.DISABLE_RECENT;
-                if (isSecure() || !ENABLE_INSECURE_STATUS_BAR_EXPAND) {
+                if (false) {
                     // showing secure lockscreen; disable expanding.
                     flags |= StatusBarManager.DISABLE_EXPAND;
                 }
