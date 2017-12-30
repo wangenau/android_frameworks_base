@@ -1051,6 +1051,10 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode,
         return lp;
     }
 
+    void onBarViewDetached() {
+     //   WindowManagerImpl.getDefault().removeView(mStatusBarWindow);
+    }
+
     @Override
     protected void updateSearchPanel() {
         super.updateSearchPanel();
