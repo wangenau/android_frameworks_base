@@ -110,6 +110,6 @@
     <integer name="heads_up_notification_decay">3700</integer>
 
     <!-- milliseconds before the heads up notification accepts touches. -->
-    <integer name="heads_up_sensitivity_delay">700</integer>
+    <integer name="heads_up_sensitivity_delay">350</integer>
 </resources>
 
