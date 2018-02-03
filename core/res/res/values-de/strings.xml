@@ -409,8 +409,6 @@
     <string name="permdesc_deleteCacheFiles" msgid="3812998599006730196">"Ermöglicht der App, Cache-Dateien zu löschen"</string>
     <string name="permlab_getPackageSize" msgid="7472921768357981986">"Speicherplatz der App ermitteln"</string>
     <string name="permdesc_getPackageSize" msgid="3921068154420738296">"Ermöglicht der App, ihre Code-, Daten- und Cache-Größe abzurufen"</string>
-    <string name="permlab_fakePackageSignature">Imitiere Packet-Signaturen</string>
-    <string name="permdesc_fakePackageSignature">Ermöglicht der App die Packet-Signatur einer anderen App zu imitieren.</string>
     <string name="permlab_installPackages" msgid="2199128482820306924">"Apps direkt installieren"</string>
     <string name="permdesc_installPackages" msgid="5628530972548071284">"Ermöglicht der App, neue oder aktualisierte Android-Pakete zu installieren. Schädliche Apps können so neue Apps mit beliebig umfangreichen Berechtigungen hinzufügen."</string>
     <string name="permlab_clearAppCache" msgid="7487279391723526815">"Alle Cache-Daten der App löschen"</string>
