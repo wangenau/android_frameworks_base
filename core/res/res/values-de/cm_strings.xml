@@ -33,6 +33,8 @@
   <string name="global_actions_toggle_expanded_desktop_mode">Erweiterter Desktop</string>
   <string name="global_actions_expanded_desktop_mode_on_status">Aktiviert</string>
   <string name="global_actions_expanded_desktop_mode_off_status">Deaktiviert</string>
+  <string name="permlab_fakePackageSignature">Signatur-Täuschung</string>
+  <string name="permdesc_fakePackageSignature">Ermöglicht der App das Umgehen der Sicherheit durch Vortäuschen einer anderen Paket-Signatur.</string>
   <string name="reboot_system" product="tablet">Tablet neu starten</string>
   <string name="reboot_system" product="default">Telefon neu starten</string>
   <string name="reboot_reboot">Neu starten</string>
