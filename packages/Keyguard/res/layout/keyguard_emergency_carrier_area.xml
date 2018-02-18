@@ -35,7 +35,8 @@
         android:inflatedId="@+id/msim_keyguard_carrier_area"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout="@layout/msim_keyguard_carrier_area" />
+        android:layout="@layout/msim_keyguard_carrier_area"
+        android:visibility="invisible" />
 
     <com.android.keyguard.CarrierText
         android:id="@+id/carrier_text"
@@ -44,7 +45,8 @@
         android:gravity="center"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textSize="@dimen/kg_status_line_font_size"
-        android:textColor="?android:attr/textColorSecondary" />
+        android:textColor="?android:attr/textColorSecondary"
+        android:visibility="invisible" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -67,7 +69,8 @@
             android:textSize="@dimen/kg_status_line_font_size"
             android:textColor="?android:attr/textColorSecondary"
             android:drawablePadding="8dip" 
-            android:textAllCaps="@bool/kg_use_all_caps" />
+            android:textAllCaps="@bool/kg_use_all_caps"
+            android:minHeight="0dp" />
 
         <Button android:id="@+id/forgot_password_button"
             android:layout_width="0dip"
