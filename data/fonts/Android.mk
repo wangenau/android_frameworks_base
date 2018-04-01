@@ -124,6 +124,10 @@ $(eval $(call create-font-symlink,RobotoCondensed-Italic.ttf,Roboto-Italic.ttf))
 $(eval $(call create-font-symlink,RobotoCondensed-BoldItalic.ttf,Roboto-BoldItalic.ttf))
 
 else # !MINIMAL_FONT
+ifeq ($(SMALLER_FONT_FOOTPRINT),true)
+font_src_files += \
+    NotoColorEmoji.ttf
+endif
 font_src_files += \
     Roboto-Light.ttf \
     Roboto-LightItalic.ttf \

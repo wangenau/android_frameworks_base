@@ -19,6 +19,7 @@ PRODUCT_COPY_FILES := \
     frameworks/base/data/fonts/fallback_fonts.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/fallback_fonts.xml
 
 PRODUCT_PACKAGES := \
+    NotoColorEmoji.ttf \
     DroidSansFallback.ttf \
     Roboto-Regular.ttf \
     Roboto-Bold.ttf \
