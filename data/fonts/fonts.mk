@@ -49,4 +49,4 @@ PRODUCT_PACKAGES := \
     Clockopia.ttf \
     AndroidClock.ttf \
     AndroidClock_Highlight.ttf \
-    AndroidClock_Solid.ttf \
+    AndroidClock_Solid.ttf
