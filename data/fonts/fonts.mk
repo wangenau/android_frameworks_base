@@ -21,18 +21,6 @@ PRODUCT_COPY_FILES := \
 PRODUCT_PACKAGES := \
     NotoColorEmoji.ttf \
     DroidSansFallback.ttf \
-    Roboto-Regular.ttf \
-    Roboto-Bold.ttf \
-    Roboto-Italic.ttf \
-    Roboto-BoldItalic.ttf \
-    Roboto-Light.ttf \
-    Roboto-LightItalic.ttf \
-    Roboto-Thin.ttf \
-    Roboto-ThinItalic.ttf \
-    RobotoCondensed-Regular.ttf \
-    RobotoCondensed-Bold.ttf \
-    RobotoCondensed-Italic.ttf \
-    RobotoCondensed-BoldItalic.ttf \
     DroidNaskh-Regular.ttf \
     DroidNaskhUI-Regular.ttf \
     DroidSansHebrew-Regular.ttf \

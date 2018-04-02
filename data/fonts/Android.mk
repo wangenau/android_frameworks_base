@@ -98,10 +98,6 @@ $(eval include $(BUILD_PREBUILT))
 endef
 
 font_src_files := \
-    Roboto-Regular.ttf \
-    Roboto-Bold.ttf \
-    Roboto-Italic.ttf \
-    Roboto-BoldItalic.ttf \
     DroidSerif-Regular.ttf \
     DroidSerif-Bold.ttf \
     DroidSerif-Italic.ttf \
@@ -112,31 +108,12 @@ font_src_files := \
     AndroidClock_Highlight.ttf \
     AndroidClock_Solid.ttf
 
-ifeq ($(MINIMAL_FONT_FOOTPRINT),true)
-
-$(eval $(call create-font-symlink,Roboto-Light.ttf,Roboto-Regular.ttf))
-$(eval $(call create-font-symlink,Roboto-LightItalic.ttf,Roboto-Italic.ttf))
-$(eval $(call create-font-symlink,Roboto-Thin.ttf,Roboto-Regular.ttf))
-$(eval $(call create-font-symlink,Roboto-ThinItalic.ttf,Roboto-Italic.ttf))
-$(eval $(call create-font-symlink,RobotoCondensed-Regular.ttf,Roboto-Regular.ttf))
-$(eval $(call create-font-symlink,RobotoCondensed-Bold.ttf,Roboto-Bold.ttf))
-$(eval $(call create-font-symlink,RobotoCondensed-Italic.ttf,Roboto-Italic.ttf))
-$(eval $(call create-font-symlink,RobotoCondensed-BoldItalic.ttf,Roboto-BoldItalic.ttf))
-
-else # !MINIMAL_FONT
+ifneq ($(MINIMAL_FONT_FOOTPRINT),true)
 ifeq ($(SMALLER_FONT_FOOTPRINT),true)
 font_src_files += \
     NotoColorEmoji.ttf
 endif
 font_src_files += \
-    Roboto-Light.ttf \
-    Roboto-LightItalic.ttf \
-    Roboto-Thin.ttf \
-    Roboto-ThinItalic.ttf \
-    RobotoCondensed-Regular.ttf \
-    RobotoCondensed-Bold.ttf \
-    RobotoCondensed-Italic.ttf \
-    RobotoCondensed-BoldItalic.ttf \
     DroidNaskh-Regular.ttf \
     DroidNaskhUI-Regular.ttf \
     DroidSansHebrew-Regular.ttf \
@@ -146,8 +123,7 @@ font_src_files += \
     LBhashitaComplexSans-Regular.ttf \
     LBhashitaComplexSans-Bold.ttf \
     AndroidEmoji.ttf
-
-endif # !MINIMAL_FONT
+endif
 
 $(foreach f, $(font_src_files), $(call build-one-font-module, $(f)))
 
