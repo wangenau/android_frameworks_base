@@ -44,13 +44,6 @@ ifeq ($(SMALLER_FONT_FOOTPRINT),true)
 droidsans_fallback_src := DroidSansFallback.ttf
 extra_font_files := DroidSans.ttf DroidSans-Bold.ttf
 else
-include $(CLEAR_VARS)
-LOCAL_MODULE := DroidSansEthiopic-Regular.ttf
-LOCAL_SRC_FILES := $(LOCAL_MODULE)
-LOCAL_MODULE_CLASS := ETC
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_PATH := $(TARGET_OUT)/fonts
-include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := MTLmr3m.ttf
@@ -64,7 +57,6 @@ droidsans_fallback_src := DroidSansFallbackFull.ttf
 extra_font_files := \
 	DroidSans.ttf \
 	DroidSans-Bold.ttf \
-	DroidSansEthiopic-Regular.ttf \
 	MTLmr3m.ttf
 endif  # SMALLER_FONT_FOOTPRINT
 
@@ -114,14 +106,6 @@ font_src_files += \
     NotoColorEmoji.ttf
 endif
 font_src_files += \
-    DroidNaskh-Regular.ttf \
-    DroidNaskhUI-Regular.ttf \
-    DroidSansHebrew-Regular.ttf \
-    DroidSansHebrew-Bold.ttf \
-    DroidSansArmenian.ttf \
-    DroidSansGeorgian.ttf \
-    LBhashitaComplexSans-Regular.ttf \
-    LBhashitaComplexSans-Bold.ttf \
     AndroidEmoji.ttf
 endif
 

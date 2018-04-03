@@ -21,19 +21,11 @@ PRODUCT_COPY_FILES := \
 PRODUCT_PACKAGES := \
     NotoColorEmoji.ttf \
     DroidSansFallback.ttf \
-    DroidNaskh-Regular.ttf \
-    DroidNaskhUI-Regular.ttf \
-    DroidSansHebrew-Regular.ttf \
-    DroidSansHebrew-Bold.ttf \
     DroidSerif-Regular.ttf \
     DroidSerif-Bold.ttf \
     DroidSerif-Italic.ttf \
     DroidSerif-BoldItalic.ttf \
     DroidSansMono.ttf \
-    DroidSansArmenian.ttf \
-    DroidSansGeorgian.ttf \
-    LBhashitaComplexSans-Regular.ttf \
-    LBhashitaComplexSans-Bold.ttf \
     AndroidEmoji.ttf \
     Clockopia.ttf \
     AndroidClock.ttf \
