@@ -88,13 +88,13 @@ public class RouteInfoTest extends TestCase {
         assertTrue(r.matches(Address("2001:db8:f00::ace:d00d")));
         assertFalse(r.matches(Address("2001:db8:f00::ace:d00e")));
         assertFalse(r.matches(Address("2001:db8:f00::bad:d00d")));
-        assertFalse(r.matches(Address("2001:4868:4860::8888")));
+        assertFalse(r.matches(Address("2606:4700:4700::1001")));
 
         r = new PatchedRouteInfo(Prefix("192.0.2.0/23"), null, "wlan0");
         assertTrue(r.matches(Address("192.0.2.43")));
         assertTrue(r.matches(Address("192.0.3.21")));
         assertFalse(r.matches(Address("192.0.0.21")));
-        assertFalse(r.matches(Address("8.8.8.8")));
+        assertFalse(r.matches(Address("1.0.0.1")));
 
         RouteInfo ipv6Default = new PatchedRouteInfo(Prefix("::/0"), null, "rmnet0");
         assertTrue(ipv6Default.matches(Address("2001:db8::f00")));
