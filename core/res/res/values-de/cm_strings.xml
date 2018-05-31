@@ -101,6 +101,7 @@
   <string name="app_ops_access_notifications">auf Benachrichtigungen zuzugreifen</string>
   <string name="app_ops_alarm_wakeup">das Gerät aufzuwecken</string>
   <string name="app_ops_draw_on_top">sich im Vordergrund einzublenden</string>
+  <string name="app_ops_su">auf Superuser zuzugreifen</string>
   <string name="app_ops_keep_device_awake">den Ruhezustand zu deaktivieren</string>
   <string name="app_ops_make_phone_call">Anrufe zu tätigen</string>
   <string name="app_ops_modify_calendar">Kalendereinträge zu ändern</string>
