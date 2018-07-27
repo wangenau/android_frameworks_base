@@ -1016,8 +1016,8 @@ static int etc1_getHeight(JNIEnv *env, jclass clazz,
  */
 
 static JNINativeMethod gMatrixMethods[] = {
-    { "multiplyMM", "([FI[FI[FI)V", (void*)util_multiplyMM },
-    { "multiplyMV", "([FI[FI[FI)V", (void*)util_multiplyMV },
+    { "multiplyMM", "!([FI[FI[FI)V", (void*)util_multiplyMM },
+    { "multiplyMV", "!([FI[FI[FI)V", (void*)util_multiplyMV },
 };
 
 static JNINativeMethod gVisibilityMethods[] = {
