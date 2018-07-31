@@ -106,6 +106,8 @@ font_src_files += \
     NotoColorEmoji.ttf
 endif
 font_src_files += \
+    DroidNaskh-Regular.ttf \
+    DroidNaskhUI-Regular.ttf \
     AndroidEmoji.ttf
 endif
 

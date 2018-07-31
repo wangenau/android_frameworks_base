@@ -21,6 +21,8 @@ PRODUCT_COPY_FILES := \
 PRODUCT_PACKAGES := \
     NotoColorEmoji.ttf \
     DroidSansFallback.ttf \
+    DroidNaskh-Regular.ttf \
+    DroidNaskhUI-Regular.ttf \
     DroidSerif-Regular.ttf \
     DroidSerif-Bold.ttf \
     DroidSerif-Italic.ttf \
