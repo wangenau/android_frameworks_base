@@ -52,7 +52,7 @@ public class ValueAnimator extends Animator {
     /**
      * Internal constants
      */
-    private static float sDurationScale = 1.0f;
+    private static float sDurationScale = 0.5f;
 
     /**
      * Values used with internal variable mPlayingState to indicate the current state of an

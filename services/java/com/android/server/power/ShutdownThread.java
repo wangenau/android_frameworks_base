@@ -68,7 +68,7 @@ public final class ShutdownThread extends Thread {
     private static final int MAX_RADIO_WAIT_TIME = 12*1000;
 
     // length of vibration before shutting down
-    private static final int SHUTDOWN_VIBRATE_MS = 500;
+    private static final int SHUTDOWN_VIBRATE_MS = 250;
 
     // state tracking
     private static Object sIsStartedGuard = new Object();
