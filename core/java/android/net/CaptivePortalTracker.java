@@ -61,7 +61,7 @@ public class CaptivePortalTracker extends StateMachine {
     private static final boolean DBG = true;
     private static final String TAG = "CaptivePortalTracker";
 
-    private static final String DEFAULT_SERVER = "clients3.google.com";
+    private static final String DEFAULT_SERVER = "localhost";
 
     private static final int SOCKET_TIMEOUT_MS = 10000;
 
@@ -126,7 +126,7 @@ public class CaptivePortalTracker extends StateMachine {
         if (mServer == null) mServer = DEFAULT_SERVER;
 
         mIsCaptivePortalCheckEnabled = Settings.Global.getInt(mContext.getContentResolver(),
-                Settings.Global.CAPTIVE_PORTAL_DETECTION_ENABLED, 1) == 1;
+                Settings.Global.CAPTIVE_PORTAL_DETECTION_ENABLED, 0) == 0;
 
         addState(mDefaultState);
             addState(mNoActiveNetworkState, mDefaultState);
